@@ -26,8 +26,11 @@ python -m venv venv
 
 ## 2. Chart.js és Frontend Függőségek Beállítása
 A Chart.js-t az NPM kezeli, de át kell másolni a Flask static mappájába.
-### 2.1. NPM Függőségek TelepítéseFuttasd a projekt gyökerében:Bashnpm install
+### 2.1. NPM Függőségek TelepítéseFuttasd a projekt gyökerében:
+```
+npm install
 npm install npm-run-all --save-dev
+```
 ### 2.2. Build Szkriptek (package.json)Győződj meg róla, hogy a package.json a Windows rendszerednek megfelelő copy parancsot tartalmazza, és az indítás sorba állítja a build folyamatot:JSON// package.json (A te Windows-os beállításaid)
 ```
 "scripts": {
