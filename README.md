@@ -19,7 +19,10 @@ your_project/
 
 
 ## 🛠️ Előkészületek és Telepítés
-A projekt beüzemeléséhez Python (Flask) és Node.js/NPM (Chart.js) is szükséges.1. Python Környezet Beállítása1.1. Virtuális Környezet Létrehozása és AktiválásaA projekt izolálása érdekében hozz létre egy virtuális környezetet (venv):RendszerLétrehozásAktiválásLinux/macOSpython3 -m venv venvsource venv/bin/activateWindowspython -m venv venvvenv\Scripts\activate1.2. Python Függőségek TelepítéseTelepítsd a Flaskot a requirements.txt fájl segítségével az aktivált környezetbe:Bash(venv) pip install -r requirements.txt
+- Virtuális környezettel érdemes.
+```
+python -m venv venv
+```
 
 ## 2. Chart.js és Frontend Függőségek Beállítása
 A Chart.js-t az NPM kezeli, de át kell másolni a Flask static mappájába.
