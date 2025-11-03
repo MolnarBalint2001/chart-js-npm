@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask ChartJS Demó</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Adat Vizualizáció Flask-ban</h1>
+    </header>
+
+    <main>
+        <p>A diagram lentebb fog megjelenni, miután behivatkoztad a Chart.js-t és inicializáltad.</p>
+        
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/chart.min.js') }}"></script>
+   
+</body>
+</html>
